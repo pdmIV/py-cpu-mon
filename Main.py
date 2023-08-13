@@ -10,7 +10,7 @@ def start_monitoring(progressbar, label):
         progressbar.set(cpu_usage)
         label.configure(text="CPU Usage: {:.2f}%".format(cpu_usage))
         root_tk.update()  # Update the GUI to reflect the changes
-        sleep(0.5)  # Wait for a second before updating again
+        sleep(0.5)  # Wait for a half-second before updating again
 
     # create main window with ctk theme
 root_tk = tkinter.Tk()
